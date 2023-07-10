@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+**Survey Project:**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I will create an small survey project to ask 10 question with multiple options to answer, just 1 is correct.
 
-## Available Scripts
+-I will create a React project from scratch by using the command "NPX create-react-app" in the terminal.
+-Once the page is properly set up with a black background, I'll start the design of the survey project.
+-Here I have only 10 questions with only 1 answe correct and 3 fake ones:
 
-In the project directory, you can run:
+1)
+Q: What is React?
+A: JavaScript library for building UI components.
+Fake Answers:
 
-### `npm start`
+Programming language for server-side development.
+Database management system.
+Visual design tool for wireframes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2)
+Q: How to pass data from parent to child component in React?
+A: Props.
+Fake Answers:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Data is automatically shared.
+'parentData' method.
+'shareData' function.
+3)
+Q: Purpose of 'key' prop in React?
+A: Uniquely identify list elements.
+Fake Answers:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Apply CSS styles to elements.
+Define rendering order.
+Encryption/decryption.
+4)
+Q: How to handle form input changes in React?
+A: 'onChange' event and update component state.
+Fake Answers:
 
-### `npm run build`
+React handles changes automatically.
+'onInputChange' method.
+'handleFormChange' function.
+5)
+Q: What is conditional rendering in React?
+A: Render components based on conditions/state.
+Fake Answers:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Based on browser type.
+Render components with random styles.
+'randomRender' function.
+6)
+Q: How to make API requests in React?
+A: 'fetch' API or libraries like Axios.
+Fake Answers:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+No API request support in React.
+'makeRequest' method.
+Built-in 'getAPI' function.
+7)
+Q: Purpose of 'useState' hook in React?
+A: Add state to functional components.
+Fake Answers:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create animations.
+Import external libraries.
+'useMyState' hook.
+8)
+Q: How to style React components?
+A: Inline styles, CSS classes, CSS modules, or CSS-in-JS libraries.
+Fake Answers:
 
-### `npm run eject`
+React automatically applies styles.
+'styleComponent' method.
+Built-in 'getStyles' function.
+9)
+Q: How to handle form submission in React?
+A: 'onSubmit' event handler.
+Fake Answers:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React handles form submission automatically.
+'handleFormSubmit' function.
+Built-in 'submitForm' method.
+10)
+Q: Role of 'useState' hook in React?
+A: Add state to functional components.
+Fake Answers:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Styling components in React.
+React automatically manages state.
+'manageState' function.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
