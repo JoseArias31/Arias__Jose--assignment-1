@@ -1,7 +1,10 @@
 import React from "react";
 import './survey.css'
+import { QaA } from './QueAndAns.js';
 
 function Survey() {
+
+    const questions = QaA;
 return(
 
 <div className="mainContainerSurvey">
@@ -11,8 +14,8 @@ return(
 <div className="containerSurvey">
 <form> 
     
-      <h2>Pregunta:</h2>
-      <p>Front-End Questions</p>
+      <h2>Question:</h2>
+      <p>{questions[0].question}</p>
       <label>
         <input
           type="radio"
@@ -21,7 +24,7 @@ return(
           //checked={selectedAnswer === 'option1'} <form onSubmit={handleSubmit}>
           //onChange={handleAnswerChange}
         />
-        Opción 1
+        {questions[0].answers.ans1}
       </label>
       <br />
       <label>
