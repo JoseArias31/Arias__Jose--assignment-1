@@ -1,79 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
 import './survey.css'
 import { QaA } from './QueAndAns.js';
 
+
+
 function Survey() {
+  const questions = QaA;
+  const [selectedAnswer, setSelectedAnswer] = useState('');
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
-    const questions = QaA;
-return(
+  const handleAnswerChange = (event) => {
+    setSelectedAnswer(event.target.value);
+  };
 
-<div className="mainContainerSurvey">
-    
-<div className="containerSurveyText">
-<h1>First Assignment CSFS1010, Survey App</h1>
-<div className="containerSurvey">
-<form> 
-    
-      <h2>Question:</h2>
-      <p>{questions[0].question}</p>
-      <label>
-        <input
-          type="radio"
-          name="answer"
-          value="option1"
-          //checked={selectedAnswer === 'option1'} <form onSubmit={handleSubmit}>
-          //onChange={handleAnswerChange}
-        />
-        {questions[0].answers.ans1}
-      </label>
-      <br />
-      <label>
-        <input
-          type="radio"
-          name="answer"
-          value="option2"
-         // checked={selectedAnswer === 'option2'}
-         // onChange={handleAnswerChange}
-        />
-        Opción 2
-      </label>
-      <br />
-      <label>
-        <input
-          type="radio"
-          name="answer"
-          value="option3"
-          //checked={selectedAnswer === 'option3'}
-          //onChange={handleAnswerChange}
-        />
-        Opción 3
-      </label>
-      <br />
-      <label>
-        <input
-          type="radio"
-          name="answer"
-          value="option4"
-          //checked={selectedAnswer === 'option4'}
-         // onChange={handleAnswerChange}
-        />
-        Opción 4
-      </label>
-      <br />
-      <button type="submit">Enviar</button>
-    </form>
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const currentQuestion = questions[currentQuestionIndex];
 
+    alert(
+      selectedAnswer === currentQuestion.correctAnswer ? 'Correct!' : 'Incorrect... Try again'
+    );
 
-</div>
-</div>
+    setSelectedAnswer('');
 
-</div>
+  
+    setCurrentQuestionIndex(currentQuestionIndex + 1);
+  };
 
+  const handlePreviousQuestion = () => {
+    setCurrentQuestionIndex(currentQuestionIndex - 1);
+  };
 
-)
+  const currentQuestion = questions[currentQuestionIndex];
 
-
-
+  return (
+    <div className="mainContainerSurvey">
+      <div className="containerSurveyText">
+        <h1>First Assignment CSFS1010, Survey App</h1>
+        <div className="containerSurvey">
+          <form onSubmit={handleSubmit}>
+            <h2>Question:</h2>
+            <p>{currentQuestion.question}</p>
+            {Object.entries(currentQuestion.answers).map(([answerKey, answerValue]) => (
+              <label key={answerKey}>
+                <input
+                  type="radio"
+                  name="answer"
+                  value={answerKey}
+                  checked={selectedAnswer === answerKey}
+                  onChange={handleAnswerChange}
+                />
+                {answerValue}
+              </label>
+            ))}
+            <br />
+           
+              <button
+                type="button"
+                disabled={currentQuestionIndex === 0}
+                onClick={handlePreviousQuestion}
+              >
+                &larr; Previous
+              </button>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Survey;

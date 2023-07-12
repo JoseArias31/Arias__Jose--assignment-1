@@ -1,5 +1,4 @@
 
-
 export const QaA = [
 {
 question: "What is React?",
@@ -104,21 +103,5 @@ correctAnswer: "ans1"
 },
 ]
 
-//function shuffleArray(array) {
-  //for (let i = array.length - 1; i > 0; i--) {
-    //const j = Math.floor(Math.random() * (i + 1));
-   // [array[i], array[j]] = [array[j], array[i]];
-  ///}
-///}
-
-// Shuffle the array of questions
-//shuffleArray(QaA);
-
-// Now, the 'questions' array contains the questions in a random order
-//console.log(QaA);
-
-//return null;
-
- // }
 
   
