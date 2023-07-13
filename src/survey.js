@@ -42,10 +42,12 @@ function Survey() {
         <div className="containerSurvey">
           <form onSubmit={handleSubmit}>
             <h2>Question:</h2>
-            <p>{currentQuestion.question}</p>
+            <p className="question">{currentQuestion.question}</p>
             {Object.entries(currentQuestion.answers).map(([answerKey, answerValue]) => (
-              <label key={answerKey}>
+              <label key={answerKey}
+              className="labelRadio">
                 <input
+                className="inputRadio"
                   type="radio"
                   name="answer"
                   value={answerKey}
@@ -56,11 +58,12 @@ function Survey() {
               </label>
             ))}
             <br />
-           
+           <div className="buttonOptions">
               <button
                 type="button"
                 disabled={currentQuestionIndex === 0}
                 onClick={handlePreviousQuestion}
+                
               >
                 &larr; Previous
               </button>
@@ -73,12 +76,16 @@ function Survey() {
 {currentQuestionIndex === 9
 ?
 <button type="submit">
-Enviar
+Finish
 </button>
 : console.log(currentQuestionIndex)}
+</div>
           </form>
+          <p>Made by Jose Arias</p>
         </div>
+        
       </div>
+      
     </div>
   );
 }

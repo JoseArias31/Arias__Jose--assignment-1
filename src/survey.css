@@ -31,3 +31,35 @@ h1{
 
     color: white;
 }
+
+.labelRadio{
+    
+    flex-direction: inherit;
+    display: flex;
+    margin-top: 20px;
+}
+
+.inputRadio {
+    height: 21px;
+    width: 11%;
+}
+
+.question{
+
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.buttonOptions{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: -webkit-center;
+}
+
+button{
+    width: 100px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
