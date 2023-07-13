@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './survey.css'
+import './questionary.css'
 import { QaA } from './QueAndAns.js';
 
 

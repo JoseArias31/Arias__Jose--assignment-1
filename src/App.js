@@ -1,6 +1,6 @@
 
 import './App.css';
-import Survey from './survey.js';
+import Survey from './questionary.js';
 
 function App() {
   return (
