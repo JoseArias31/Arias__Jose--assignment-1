@@ -69,7 +69,7 @@ function Survey() {
               </button>
               
   <button type="submit" disabled={currentQuestionIndex === 9}>
-    Enviar
+    Send
   </button>
 
 
