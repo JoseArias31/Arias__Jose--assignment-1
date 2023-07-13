@@ -31,6 +31,8 @@ function Survey() {
     setCurrentQuestionIndex(currentQuestionIndex - 1);
   };
 
+  
+
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
@@ -62,7 +64,18 @@ function Survey() {
               >
                 &larr; Previous
               </button>
-            <button type="submit">Enviar</button>
+              
+  <button type="submit" disabled={currentQuestionIndex === 9}>
+    Enviar
+  </button>
+
+
+{currentQuestionIndex === 9
+?
+<button type="submit">
+Enviar
+</button>
+: console.log(currentQuestionIndex)}
           </form>
         </div>
       </div>
