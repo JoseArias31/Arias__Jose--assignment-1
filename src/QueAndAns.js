@@ -1,7 +1,7 @@
 
 export const QaA = [
 {
-question: "What is React?",
+question: "1) What is React?",
 answers:
 {
 ans1: "JavaScript library for building UI components.",
@@ -12,7 +12,7 @@ ans4: "Visual design tool for wireframes."
 correctAnswer: "ans1"
 },
 {
-question: "How to pass data from parent to child component in React?",
+question: "2) How to pass data from parent to child component in React?",
 answers: {
 ans1: "Props.",
 ans2: "Data is automatically shared.",
@@ -22,7 +22,7 @@ ans4: "'shareData' function."
 correctAnswer: "ans1"
 },
 {
-question: "Purpose of 'key' prop in React?",
+question: "3) Purpose of 'key' prop in React?",
 answers: {
 ans1: "Uniquely identify list elements.",
 ans2: "Apply CSS styles to elements.",
@@ -32,7 +32,7 @@ ans4: "Encryption/decryption."
 correctAnswer: "ans1"
 },
 {
-question: "How to handle form input changes in React?",
+question: "4) How to handle form input changes in React?",
 answers: {
 ans1: "'onChange' event and update component state.",
 ans2: "React handles changes automatically.",
@@ -42,7 +42,7 @@ ans4: "'handleFormChange' function."
 correctAnswer: "ans1"
 },
 {
-question: "What is conditional rendering in React?",
+question: "5) What is conditional rendering in React?",
 answers:{
 ans1: "Render components based on conditions/state.",
 ans2: "Based on browser type.",
@@ -52,7 +52,7 @@ ans4: "'randomRender' function."
 correctAnswer: "ans1"
 },
 {
-question: "How to make API requests in React?",
+question: "6) How to make API requests in React?",
 answers: {
 ans1: "'fetch' API or libraries like Axios.",
 ans2: "No API request support in React.",
@@ -62,7 +62,7 @@ ans4: "Built-in 'getAPI' function."
 correctAnswer: "ans1"
 },
 {
-question: "Purpose of 'useState' hook in React?",
+question: "7) Purpose of 'useState' hook in React?",
 answers: {
 ans1: "Add state to functional components.",
 ans2: "Create animations.",
@@ -72,7 +72,7 @@ ans4: "'useMyState' hook."
 correctAnswer: "ans1"
 },
 {
-question: "How to style React components?",
+question: "8) How to style React components?",
 answers:{
 ans1: "Inline styles, CSS classes, CSS modules, or CSS-in-JS libraries.",
 ans2: "React automatically applies styles.",
@@ -82,7 +82,7 @@ ans4: "Built-in 'getStyles' function."
 correctAnswer: "ans1"
 },
 {
-question: "How to handle form submission in React?",
+question: "9) How to handle form submission in React?",
 answers:{
 ans1: "'onSubmit' event handler.",
 ans2: "React handles form submission automatically.",
@@ -92,7 +92,7 @@ ans4: "Built-in 'submitForm' method."
 correctAnswer: "ans1"
 },
 {
-question: "Role of 'useState' hook in React?",
+question: "10) Role of 'useState' hook in React?",
 answers:{
 ans1: "Add state to functional components.",
 ans2: "Styling components in React.",

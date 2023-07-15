@@ -63,3 +63,11 @@ button{
     font-weight: 700;
 }
 
+
+.resultForm{
+
+width: 100%;
+background: white;
+padding-bottom: 30px;
+padding-top: 30px;
+}
