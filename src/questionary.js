@@ -27,6 +27,14 @@ function Survey() {
   
     setSelectedAnswer('');
   
+    if (selectedAnswer === currentQuestion.correctAnswer) {
+      setScore(score + 1);
+    }
+  
+    if (currentQuestionIndex === 9) {
+      setIsOver(true);
+    }
+
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     }else {
@@ -37,13 +45,8 @@ function Survey() {
   
   
   const handleFinalButton = () => {
-    if (selectedAnswer === currentQuestion.correctAnswer) {
-      setScore(score + 1);
-    }
-  
-    if (currentQuestionIndex === 9) {
-      setIsOver(true);
-    }
+   
+   
   };
   
 
@@ -76,6 +79,7 @@ function Survey() {
                   value={answerKey}
                   checked={selectedAnswer === answerKey}
                   onChange={handleAnswerChange}
+                  required
                 />
                 {answerValue}
               </label>
@@ -115,6 +119,7 @@ Finish
           onClick={() => {
             setIsOver(false);
             setCurrentQuestionIndex(0);
+            setScore(0)
           }}
         >
           Try Again
