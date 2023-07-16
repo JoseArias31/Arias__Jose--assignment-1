@@ -1,10 +1,10 @@
-**Survey Project:**
+**Questionary Project:**
 
-I will create an small survey project to ask 10 question with multiple options to answer, just 1 is correct.
+I will create a small questionary project to ask 10 questions with multiple options to answer, just 1 is correct.
 
 -I will create a React project from scratch by using the command "NPX create-react-app" in the terminal.
--Once the page is properly set up with a black background, I'll start the design of the survey project.
--Here I have only 10 questions with only 1 answe correct and 3 fake ones:
+-Once the page is correctly set up with a black background, I'll start the design of the survey project.
+-Here I have only 10 questions with only 1 answer correct and 3 fake ones:
 
 1)
 Q: What is React?
@@ -16,7 +16,7 @@ Database management system.
 Visual design tool for wireframes.
 
 2)
-Q: How to pass data from parent to child component in React?
+Q: How to pass data from parent to child components in React?
 A: Props.
 Fake Answers:
 
