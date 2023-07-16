@@ -102,7 +102,7 @@ export const QaA = [
     }
   ];
   
-  // Función para obtener respuestas aleatorias
+  // Function to get random answers
   function getRandomAnswers(answers) {
     const keys = Object.keys(answers);
     const shuffledKeys = shuffleArray(keys);
@@ -113,7 +113,7 @@ export const QaA = [
     return randomizedAnswers;
   }
   
-  // Función para mezclar un arreglo
+  // Function to mix an array
   function shuffleArray(array) {
     const shuffledArray = [...array];
     for (let i = shuffledArray.length - 1; i > 0; i--) {
