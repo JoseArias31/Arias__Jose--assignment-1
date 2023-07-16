@@ -71,3 +71,13 @@ background: white;
 padding-bottom: 30px;
 padding-top: 30px;
 }
+
+.done {
+background: white;
+font-size: 15px;
+font-weight: 700;
+}
+
+.rendered{
+    background: white;
+}
